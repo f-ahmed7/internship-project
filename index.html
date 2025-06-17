@@ -15,8 +15,24 @@
     <h1>Hyrule Compendium API Project</h1>
   </div>
  
+  <div class="searchbar">
+    <input type="search" id="searchInput" list="entries" placeholder="Search for creatures, equipment, materials, monsters or treasure."/>
+    <input type="button" id="searchButton" value="Search" onclick="fetchData()"/>
+    <div id="datalistImport"></div>
+  </div>
+
+  <div class="content">
+    This website takes the users input and searches the Hyrule Compendium API for relevant information. The results are displayed below. You can do a random search <a href="#">here.</a>
+    <br>
+    <br>
+    <a href="https://gadhagod.github.io/Hyrule-Compendium-API/#/">Source to Hyrule Compendium API</a>
+  </div>
+
+  <div id="resultCard">
+  </div>
 
  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
